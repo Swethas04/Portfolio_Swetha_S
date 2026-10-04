@@ -15,7 +15,7 @@ export const hero = {
   tagline: "Building intelligent full-stack experiences — one commit at a time.",
   email: "swethasenthilkumar.000@gmail.com",
   phone: "+91 8248499703",
-  linkedin: "https://linkedin.com/in/swetha-senthilkumar",
+  linkedin: "https://linkedin.com/in/swetha-senthilkumar04",
   github: "https://github.com/Swethas04",
   leetcode: "https://leetcode.com/u/swetha_s016/",   // add your real URL
   hackerrank: "https://www.hackerrank.com/profile/swetha_s04",
@@ -101,8 +101,8 @@ export const profiles = [
   },
   {
     name: "LinkedIn",
-    url: "https://linkedin.com/in/swetha-senthilkumar",
-    username: "swetha-senthilkumar",
+    url: "https://www.linkedin.com/in/swetha-senthilkumar04/",
+    username: "swetha-senthilkumar04",
     description: "Professional network & achievements",
     color: "from-blue-700 to-blue-900",
     icon: "linkedin",
