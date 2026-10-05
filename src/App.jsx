@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import CustomCursor from './components/ui/CustomCursor';
-import InteractiveBackground from './components/ui/InteractiveBackground';
+import CosmicCanvas from './components/ui/CosmicCanvas';
 import Navbar from './components/Navbar';
 import Hero from './components/sections/Hero';
 import About from './components/sections/About';
@@ -16,7 +16,7 @@ import Contact from './components/sections/Contact';
 
 export default function App() {
   const [theme, setTheme] = useState(() => {
-    return localStorage.getItem('portfolio-theme') || 'light';
+    return localStorage.getItem('portfolio-theme') || 'dark';
   });
 
   useEffect(() => {
@@ -32,17 +32,17 @@ export default function App() {
   const toggleTheme = () => setTheme((t) => (t === 'dark' ? 'light' : 'dark'));
 
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-[#090a16] text-slate-900 dark:text-slate-100 transition-colors duration-300 relative overflow-hidden">
-      {/* Dynamic Interactive Canvas & Glow Background */}
-      <InteractiveBackground />
+    <div className="min-h-screen bg-[#f5f0fb] dark:bg-[#0c0714] text-slate-800 dark:text-purple-100 transition-colors duration-300 relative overflow-hidden">
+      {/* Real-time 3D Cosmic Constellation WebGL Universe */}
+      <CosmicCanvas />
 
-      {/* Dual Layer Glass Magnetic Cursor */}
+      {/* 3D Gravitational Quantum Cursor */}
       <CustomCursor />
 
-      {/* Main Navigation */}
+      {/* 3D Floating Glass Deck Navigation */}
       <Navbar theme={theme} toggleTheme={toggleTheme} />
 
-      {/* Portfolio Content */}
+      {/* 3D Immersive Spatial Portfolio Sections */}
       <main className="relative z-10">
         <Hero />
         <About />
@@ -59,3 +59,5 @@ export default function App() {
     </div>
   );
 }
+
+
